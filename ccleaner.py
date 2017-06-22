@@ -5,7 +5,7 @@ import platform
 
 mozilla_windows = '' #route for mozilla or chrome history to delete 
 mozilla_linux = '' #route for mozilla or chrome history to delete 
-LOG_FILE = 'C:\Users\ORDENADOR_1\Desktop\ccleaner_python\ccleaner_log.txt';
+LOG_FILE = 'ccleaner_log.txt';
 dir_text = 'Folder contents successfully deleted!'
 
 logging.basicConfig(filename=LOG_FILE, level=logging.DEBUG, 
@@ -28,7 +28,7 @@ if platform.system() == 'Windows':
 		except Exception as err: 
 			logger.error(err)
 	else: 
-		print 'The route for mozilla history is not correct!'
+		print 'The route for mozilla or chrome history is not correct.'
 elif platform.system() == 'Linux': 
 	if os.path.exists(mozilla_linux):
 		try: 
@@ -45,6 +45,6 @@ elif platform.system() == 'Linux':
 		except Exception as err: 
 			logger.error(err)
 	else: 
-		print 'The route for mozilla history is not correct!'
+		print 'The route for mozilla or chrome history is not correct.'
 else: 
 	pass 
