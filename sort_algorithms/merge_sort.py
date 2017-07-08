@@ -1,5 +1,5 @@
 """
-Merge Sort 
+Merge Sort, el quick sort es parecido 
 Se va resquebrajando la lista en listas diminutas mediante la recursividad 
 """
 
