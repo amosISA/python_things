@@ -20,9 +20,12 @@ def are_anagrams(a,b):
         if c.isupper():
             letters[c] = letters.get(c, 0) - 1
 
-    if any(letters.values()):
-        return 0
+	# devuelve true si no tiene valores [0, False, '', 0.0, [], {}, None] 
+	# (which all have boolean values of False) then any(letters.values()) would be False
+    if any(letters.values()): 
+        return 0 # they not anagrams 
     else:
-        return 1
+        return 1 # they do 
 		
 print are_anagrams("SOMA", "AMOS")
+print are_anagrams("SOMA", "AMOSS")
