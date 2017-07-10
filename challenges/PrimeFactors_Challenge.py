@@ -28,7 +28,7 @@ def findprimes(n):
   if n>2:                          #Here we append the last factor.
     primes.append(n)
   
-findprimes(3072)
+findprimes(3)
 print "The list of primes is: "
 print primes
 print "And their sum is: "
