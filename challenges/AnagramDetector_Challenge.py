@@ -3,7 +3,6 @@ Write a function in your favorite programming language that will accept any two
 strings as parameters and return "1" if they are anagrams and "0" if they are not.
 For simplicity's sake, focus only on strings composed from uppercase 
 letters (in hex ASCII - from 41 (A) to 5A (Z)) and space characters.
-Code extracted from cloudrunner15916 in codeacademy!
 """
 def are_anagrams(a,b):
     letters = {}
