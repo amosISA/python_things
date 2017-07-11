@@ -14,7 +14,19 @@ def uniqueCharacters(str):
 		list.append(i)
 	print "all unique"
 	
+def anotherMethod (stri): 
+	bool_check = False
+	for i in range(0, len(stri)): 
+		for j in range(i+1,len(stri)):
+			if stri[i] == stri[j]: 
+				bool_check = True
 	
+	if bool_check: 
+		print "duplicates found"
+	else: 
+		print "all unique"
+	
+print "UNIQUE WITH FIRST METHOD"
 uniqueCharacters("soma")
 uniqueCharacters("ssoma")		
 uniqueCharacters('==============')
@@ -27,3 +39,9 @@ uniqueCharacters('fdsa')
 uniqueCharacters('ffff')
 uniqueCharacters('fadsfasfasdf')
 uniqueCharacters('==============')
+
+print "UNIQUE WITH OTHER METHOD:"
+anotherMethod("amos")
+anotherMethod("amoss")
+anotherMethod("aamoss")
+anotherMethod("aamos")
