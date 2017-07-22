@@ -27,5 +27,23 @@ def getX(i, lst):
 	
 	return m 
 	
+def getXSorted(i, lst): 
+	if i > len(lst) or i < 1:
+		return 'ValueError'
+		
+	sorted_lst = insertionSort(lst)
 	
+	for j in range(len(sorted_lst)):
+		if j == i:
+			print sorted_lst[j-1]
+
+print "With sorted algorithm: "
+getXSorted(4, [5,10,-3,7,9]) 
+getXSorted(2, [5,10,-3,7,9])
+getXSorted(10, [5,10,-3,7,9,234,654,-234,234,978,6,7])
+print("")
+
+print "Without sorting:"
 print getX(4, [5,10,-3,7,9]) 
+print getX(2, [5,10,-3,7,9])
+print getX(10, [5,10,-3,7,9,234,654,-234,234,978,6,7])
