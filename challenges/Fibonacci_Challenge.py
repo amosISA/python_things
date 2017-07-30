@@ -1,6 +1,6 @@
 
 # 1. Fibonacci de forma recursiva, no es muy util pues tarda bastante, y ademas se recomienda no buscar por encima de 20 
-
+import sys
 count = 0
 
 def fibonacci(n): 
@@ -14,7 +14,7 @@ def fibonacci(n):
 
 a = fibonacci(10)
 print "It took "+str(count)+" calculations to find that the 10th fibonacci number is "+str(a)+"."
-		
+
 		
 """
 2. Write a function, fibonacciFinderN, that will find the nth number in the Fibonacci Sequence.
