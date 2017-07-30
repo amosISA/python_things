@@ -23,5 +23,6 @@ def isPermPalindrome(pal):
 	
 print isPermPalindrome('Kayak')
 print isPermPalindrome('No lemon, no melon')
+print isPermPalindrome('No, lemon no melon')
 print isPermPalindrome('amos')
 print isPermPalindrome('amo')

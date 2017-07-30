@@ -19,3 +19,4 @@ def productOfTheOthers(list):
 	return output 
 		
 print productOfTheOthers([1, 2, 3, 4])
+print productOfTheOthers([15, 22, 13, 4])
