@@ -20,4 +20,6 @@ for video in videos:
 	# Print all hrefs from all <a> tags 
 	print href 
 
+# Download all pdfs from a web 
+# https://null-byte.wonderhowto.com/how-to/download-all-pdfs-webpage-with-python-script-0163031/
       
