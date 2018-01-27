@@ -1,18 +1,13 @@
-z = 1
-odd_numbers = []
-
 def timesTables():
-	global z, odd_numbers
-	for i in range(1, 13):
-		print z * i,
+    print_table((str(x * y) for x in range(1, 13)) for y in range(1, 13))
 
-		if z*i % 2 != 0:
-			odd_numbers.append(z*i) 
-		
-	print ''
-	z += 1
+def oddTimesTables():
+    print_table((str(x * y) for x in range(1, 13, 2)) for y in range(1, 13, 2))
 
-while(z!=13):
-	timesTables()
+def print_table(table):
+    print('\n'.join([' '.join(row) for row in table]))
 
-print odd_numbers
+print(timesTables.__name__)
+timesTables()
+print('\n%s' % oddTimesTables.__name__)
+oddTimesTables()
